@@ -1,7 +1,10 @@
 // Importing necessary libraries
+import dotenv from 'dotenv';
 import express from "express"; // Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 import cors from "cors"; // CORS is a node.js package for providing a Connect/Express middleware that can be used to enable CORS with various options.
 import mongoose from "mongoose"; // Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment. Mongoose supports both promises and callbacks.
+
+dotenv.config();
 
 // Importing JSON data from a local file
 import nbaData from "./data/nba.json";
